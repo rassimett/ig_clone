@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ig_clone/responsive/mobile_screen_layout.dart';
 import 'package:ig_clone/responsive/responsive_layout_screen.dart';
 import 'package:ig_clone/responsive/web_screen_layout.dart';
+import 'package:ig_clone/screens/login_screen.dart';
 import 'package:ig_clone/utilities/colors.dart';
 
 void main() {
@@ -20,8 +21,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: mobileBackgroundColor,
       ),
-      home: const 
-      ResponsiveLayout(WebScreenLayout: WebScreenLayout(), MobileScreenLayout:MobileScreenLayout())
+      // home: const 
+      // ResponsiveLayout(WebScreenLayout: WebScreenLayout(), MobileScreenLayout:MobileScreenLayout())
+      home: LoginScreen(),
     );
   }
 }
